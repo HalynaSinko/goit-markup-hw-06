@@ -231,10 +231,9 @@ img {
   margin-left: auto;
 }
 
-.hero-btn {
+.button {
   display: inline-block;
   border-radius: 4px;
-  padding: 10px 32px;
   border: none;
   cursor: pointer;
 
@@ -247,6 +246,10 @@ img {
 
   background-color: var(--accent-color);
   color: var(--dark-main-color);
+}
+
+.hero-btn {
+  padding: 10px 32px;
 }
 
 /* hero-overlay */
@@ -556,12 +559,14 @@ img {
 
 .footer-join {
   min-width: 206px;
+  margin-right: 93px;
 }
 
 .footer .conteiner {
   align-items: baseline;
 }
 
+.sign,
 .footer-join > p {
   margin-bottom: 20px;
   font-weight: var(--bolt-font-weight);
@@ -569,6 +574,57 @@ img {
   color: var(--dark-main-color);
 }
 
+/* footer-form-sign */
+
+.form-sign {
+  min-width: 570px;
+}
+
+.form-field {
+  position: relative;
+  display: inline-flex;
+  width: 358px;
+  margin-right: 12px;
+}
+
+.form-field > label {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.sing-email {
+  display: inline-block;
+  width: 100%;
+  padding: 14px 16px 14px 73px;
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.6);
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: inherit;
+  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+
+.sign-btn {
+  display: inline-flex;
+  padding: 10px 28px;
+  align-items: center;
+  margin-left: -4px;
+}
+
+.icon-send {
+  margin-left: 10px;
+}
 /* portfolio */
 
 .portfolio {
