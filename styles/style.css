@@ -909,9 +909,11 @@ img {
   color: var(--accent-color);
 }
 .label-comment:hover .form-input,
+.label-comment:focus-within > .form-input,
 .form-label:hover > .form-input,
 .form-label:focus-within > .form-input {
   border-color: var(--accent-color);
+  outline: transparent;
 }
 
 .send-btn {
