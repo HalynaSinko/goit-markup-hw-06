@@ -904,6 +904,11 @@ img {
   padding-right: 16px;
   padding-left: 16px;
 }
+
+.comment::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+
 .form-label:hover .transition-fill,
 .form-label:focus-within ~ .transition-fill {
   color: var(--accent-color);
