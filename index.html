@@ -398,9 +398,9 @@
         </ul>
       </div>
 
-      <!-- Form sign -->
-      <div class="form-sign">
-        <p class="sign text">Подпишитесь на рассылку</p>
+      <!-- Form subscription -->
+      <form class="subscription" name="subscription" autocomplete="on">
+        <p class="sign-up text">Подпишитесь на рассылку</p>
         <div class="form-field">
           <label for=footer-email>E-mail</label>
           <input type="email" class="sing-email" name="email" id="footer-email">
@@ -410,13 +410,55 @@
             <use href="./images/symbol-defs.svg#icon-send"></use>
           </svg>
         </button>
-      </div>
+      </form>
     </div>
   </footer>
 
   <!-- backdrop end modal window -->
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
+      <!-- form-application -->
+      <form class="form-application" name="application" autocomplete="on">
+        <p class="call-text text">Оставьте свои данные, мы вам перезвоним</p>
+        <label class="form-label">
+          <span class="label-text">Имя</span>
+          <input type="text" class="form-input" name="name">
+          <span class="transition-fill">
+            <svg class="form-icon">
+              <use href="./images/symbol-defs.svg#icon-person-black"></use>
+            </svg>
+          </span>
+        </label>
+        <label class="form-label">
+          <span class="label-text">Телефон</span>
+          <input type="tel" class="form-input" name="tel">
+          <span class="transition-fill">
+            <svg class="form-icon">
+              <use href="./images/symbol-defs.svg#icon-phone-black"></use>
+            </svg>
+          </span>
+        </label>
+        <label class="form-label">
+          <span class="label-text">Почта</span>
+          <input type="email" class="form-input" name="email">
+          <span class="transition-fill">
+            <svg class="form-icon">
+              <use href="./images/symbol-defs.svg#icon-email-black"></use>
+            </svg>
+          </span>
+        </label>
+        <label class="label-comment">
+          <span class="label-text">Комментарий</span>
+          <textarea name="comment" class="form-input comment" placeholder="Введите текст" autocomplete="off"></textarea>
+        </label>
+        <div class="field-agree">
+          <input type="checkbox" class="old-checkbox visually-hidden" id="checkbox">
+          <label class="label-agree" for="checkbox">Соглашаюсь с рассылкой и принимаю
+            <a class="contract-terms" href="">Условия договора</a>
+          </label>
+        </div>
+        <button class="button send-btn" type="submit">Отправить</button>
+      </form>
       <button class="modal-btn" data-modal-close>
         <svg class="close-icon" width="18" height="18">
           <use href="./images/symbol-defs.svg#icon-close"></use>
