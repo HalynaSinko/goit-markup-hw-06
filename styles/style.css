@@ -582,26 +582,15 @@ img {
 }
 
 .form-field {
-  position: relative;
   display: inline-flex;
-  width: 358px;
+  min-width: 358px;
   margin-right: 12px;
 }
 
-.form-field > label {
-  position: absolute;
-  top: 50%;
-  left: 16px;
-  transform: translateY(-50%);
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
 .sing-email {
   display: inline-block;
   width: 100%;
-  padding: 14px 16px 14px 73px;
+  padding: 14px 16px;
   margin: 0;
 
   font-size: 16px;
@@ -614,6 +603,13 @@ img {
   border-radius: 4px;
   background-color: inherit;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.sing-email::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .sign-btn {
@@ -822,7 +818,8 @@ img {
   transition: color var(--time-transition) var(--function-bezier);
 }
 
-.modal-btn:hover {
+.modal-btn:hover,
+.modal-btn:focus {
   color: var(--accent-color);
 }
 
@@ -910,7 +907,7 @@ img {
 }
 
 .form-label:hover .transition-fill,
-.form-label:focus-within ~ .transition-fill {
+.form-label:focus-within .transition-fill {
   color: var(--accent-color);
 }
 .label-comment:hover .form-input,
@@ -948,6 +945,7 @@ img {
   line-height: 1.71;
   text-decoration: underline;
   color: var(--accent-color);
+  text-decoration-skip-ink: none;
 }
 
 .label-agree::after {
